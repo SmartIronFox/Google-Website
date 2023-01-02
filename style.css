@@ -1,0 +1,203 @@
+html {
+  height: 90%;
+}
+
+body.search {
+  height: 100%;
+  font-family: roboto-mono, Arial, Helvetica, sans-serif;
+  background-color: #202124;
+  color: white;
+}
+body.search div.form-container, body.search div {
+  text-align: center;
+  margin: auto;
+}
+body.search div.links {
+  position: absolute;
+  display: flex;
+  width: 20%;
+  padding: 20px 10px;
+  align-items: center;
+  align-content: space-between;
+  right: 0;
+  top: 0;
+}
+body.search div.links a {
+  text-decoration: none;
+  font-weight: lighter;
+  color: gray;
+  transition: color 250ms;
+}
+body.search div.links a:hover {
+  text-decoration: underline;
+  color: white;
+}
+body.search div.form-container {
+  position: relative;
+  top: 35%;
+  width: 38%;
+}
+body.search div.form-container h1 {
+  font-size: 500%;
+  margin: 10px auto;
+  display: inline;
+  font-weight: lighter;
+}
+body.search div.form-container p {
+  display: inline;
+}
+body.search div.form-container .button, body.search div.form-container .bar {
+  display: block;
+  margin: 22px auto;
+  padding: 10px 15px;
+  color: white;
+  font-size: 15px;
+  transition: border 250ms, background-color 250ms;
+}
+body.search div.form-container .bar {
+  font-family: roboto-mono, Arial, Helvetica, sans-serif;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: #202124;
+}
+body.search div.form-container .bar:focus {
+  background-color: #303134;
+}
+body.search div.form-container .button {
+  display: inline;
+  margin: 14px 18px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #303134;
+}
+body.search div.form-container .button:hover {
+  border: 1px solid gray;
+}
+
+red {
+  color: red;
+}
+
+blue {
+  color: blue;
+}
+
+green {
+  color: green;
+}
+
+yellow {
+  color: gold;
+}
+
+div.links {
+  position: absolute;
+  display: flex;
+  width: 20%;
+  padding: 20px 10px;
+  align-items: center;
+  align-content: space-between;
+  right: 0;
+  top: 0;
+}
+div.links a {
+  text-decoration: none;
+  font-weight: lighter;
+  color: gray;
+  transition: color 250ms;
+}
+div.links a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+/* Advance search */
+body.advanced div.content .inputs, body.advanced div.content {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+body.advanced {
+  font-family: roboto-mono, Arial, Helvetica, sans-serif;
+  background-color: #202124;
+  height: 85%;
+  color: white;
+}
+body.advanced .hr-clone {
+  height: 1px;
+  width: 100%;
+  background-color: #303134;
+  margin: 30px 0px;
+}
+body.advanced h3 {
+  margin: 0 40px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: orangered;
+}
+body.advanced input[type=submit] {
+  position: absolute;
+  right: 51%;
+  bottom: 130px;
+  width: 10%;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  background-color: rgba(77, 144, 254, 0.9019607843);
+  padding: 8px 10px;
+  border: none;
+  transition: background-color 250ms;
+}
+body.advanced input[type=submit]:hover {
+  background-color: #4d90fe;
+}
+body.advanced div.content {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  width: 80%;
+  margin-left: 40px;
+}
+body.advanced div.content p {
+  color: darkgray;
+}
+body.advanced div.content h2 {
+  text-align: left;
+}
+body.advanced div.content .guide {
+  display: grid;
+  grid-template-columns: 0.75fr 2fr 1.75fr;
+}
+body.advanced div.content .guide h4 {
+  text-align: left;
+}
+body.advanced div.content .inputs {
+  display: grid;
+  grid-template-columns: 0.75fr 2fr 1.75fr;
+}
+body.advanced div.content .inputs .inputs-template {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+body.advanced div.content .inputs .inputs-template input {
+  padding: 0 0;
+  margin: 16.4px 0;
+  background-color: #202124;
+  border: 1px solid gray;
+  height: 25%;
+  width: 80%;
+  border-radius: 2px;
+  color: white;
+  padding: 2px 5px;
+}
+body.advanced div.content .inputs .inputs-template input.low-high {
+  width: 38%;
+}
+body.advanced div.content .inputs .inputs-template p {
+  text-align: left;
+}
+
+white {
+  color: white;
+}/*# sourceMappingURL=style.css.map */

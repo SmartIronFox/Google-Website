@@ -1,0 +1,243 @@
+$color-text: white;
+$color-background: #202124;
+$color-input: gray;
+$color-input-background: #303134;
+$font: roboto-mono, Arial, Helvetica, sans-serif;
+
+html{
+    height:90%;
+}
+
+body.search {
+    height: 100%;
+    font-family:  $font;
+    background-color: $color-background;
+    color: $color-text;
+
+    %basic-div {
+        text-align: center;
+        margin: auto;
+    }
+    div {
+        @extend %basic-div;
+    }
+
+    div.links {
+        @extend %basic-div;
+        position: absolute;
+        display: flex;
+        width: 20%;
+        padding: 20px 10px;
+        align-items: center;
+        align-content: space-between;
+        right: 0;
+        top: 0;
+        
+        a {
+            text-decoration: none;
+            font-weight: lighter;
+            color: $color-input;
+            transition: color 250ms;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: $color-text;
+        }
+    }
+
+    div.form-container {
+        @extend %basic-div;
+        position: relative;
+        top: 35%;
+        width: 38%;
+
+        h1 {
+            font-size: 500%;
+            margin: 10px auto;
+            display: inline;
+            font-weight: lighter;
+        }
+        p {
+            display: inline;
+        }
+
+        %input {
+            display: block;
+            margin: 22px auto;
+            padding: 10px 15px;
+            color: $color-text;
+            font-size: 15px;
+            transition: border 250ms, background-color 250ms;
+        }
+        .bar {
+            @extend %input;
+            font-family: $font;
+            width: 100%;
+            border: 1px solid $color-text;
+            border-radius: 15px;
+            background-color: $color-background;
+        }
+        .bar:focus {
+            background-color: $color-input-background;
+        }
+
+        .button {
+            @extend %input;
+            display: inline;
+            margin: 14px 18px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            background-color: $color-input-background;
+        }
+        .button:hover {
+            border: 1px solid $color-input;
+        }
+    }
+}
+
+red {
+    color: red;
+}
+
+blue {
+    color: blue;
+}
+
+green {
+    color: green;
+}
+
+yellow {
+    color: gold;
+}
+
+div.links {
+    @extend %basic-div;
+    position: absolute;
+    display: flex;
+    width: 20%;
+    padding: 20px 10px;
+    align-items: center;
+    align-content: space-between;
+    right: 0;
+    top: 0;
+    
+    a {
+        text-decoration: none;
+        font-weight: lighter;
+        color: $color-input;
+        transition: color 250ms;
+    }
+    a:hover {
+        text-decoration: underline;
+        color: $color-text;
+    }
+}
+
+/* Advance search */
+
+%advanced-div {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+body.advanced {
+    font-family: $font;
+    background-color: $color-background;
+    height: 85%;
+    color: white;
+
+    .hr-clone {
+        height: 1px;
+        width: 100%;
+        background-color: $color-input-background;
+        margin: 30px 0px;
+    }
+
+    h3 {
+        margin: 0 40px;
+        margin-top: 60px;
+        margin-bottom: 20px; 
+        color: orangered;
+    }
+
+    input[type="submit"] {
+        position: absolute;
+        right: 51%;
+        bottom: 130px;
+        width: 10%;
+        border-radius: 5px;
+        color: black;
+        font-weight: bold;
+        background-color: #4d90fee6;
+        padding: 8px 10px;
+        border: none;
+        transition: background-color 250ms;
+    }
+    input[type="submit"]:hover {
+        background-color: #4d90feff;
+    }
+    
+    div.content {
+        @extend %advanced-div;
+        display: grid;
+        grid-template-rows: 1fr 5fr;
+        width: 80%;
+        margin-left: 40px;
+
+        p {
+            color: darkgray;
+        }
+
+        h2 {
+            text-align: left;
+        }
+
+        .guide {
+            display: grid;
+            grid-template-columns: 0.75fr 2fr 1.75fr;
+
+            h4 {
+                text-align: left;
+            }
+        }
+
+        .inputs {
+            @extend %advanced-div;
+
+            display: grid;
+            grid-template-columns: 0.75fr 2fr 1.75fr;
+
+            .inputs-template {
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+                input {
+                    padding: 0 0;
+                    margin: 16.4px 0;
+                    background-color: $color-background;
+                    border: 1px solid $color-input;
+                    height: 25%;
+                    width: 80%;
+                    border-radius: 2px;
+                    color: white;
+                    padding: 2px 5px;
+                }
+
+                input.low-high {
+                    width: 38%;
+                }
+
+                p {
+                    text-align: left;
+                }
+
+            }
+        }
+    }
+}
+
+white {
+    color: white;
+}
